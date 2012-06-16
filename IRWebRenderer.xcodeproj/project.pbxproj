@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF63D403158B9E65006C9A7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF63D402158B9E65006C9A7E /* Foundation.framework */; };
+		FF63D409158B9E65006C9A7E /* IRWebRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF63D408158B9E65006C9A7E /* IRWebRenderer.m */; };
+		FF63D410158B9F13006C9A7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF63D40F158B9F13006C9A7E /* UIKit.framework */; };
+		FF63D417158BA133006C9A7E /* IRWebRenditionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FF63D415158BA133006C9A7E /* IRWebRenditionOperation.h */; };
+		FF63D418158BA133006C9A7E /* IRWebRenditionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FF63D416158BA133006C9A7E /* IRWebRenditionOperation.m */; };
+		FF63D451158BAF86006C9A7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF63D40F158B9F13006C9A7E /* UIKit.framework */; };
+		FF63D452158BAF86006C9A7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF63D402158B9E65006C9A7E /* Foundation.framework */; };
+		FF63D453158BAF86006C9A7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF63D438158BAF5D006C9A7E /* CoreGraphics.framework */; };
+		FF63D459158BAF86006C9A7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF63D457158BAF86006C9A7E /* InfoPlist.strings */; };
+		FF63D45B158BAF86006C9A7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF63D45A158BAF86006C9A7E /* main.m */; };
+		FF63D45F158BAF86006C9A7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF63D45E158BAF86006C9A7E /* AppDelegate.m */; };
+		FF63D468158BAF86006C9A7E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF63D41F158BAF2C006C9A7E /* SenTestingKit.framework */; };
+		FF63D469158BAF86006C9A7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF63D40F158B9F13006C9A7E /* UIKit.framework */; };
+		FF63D46A158BAF86006C9A7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF63D402158B9E65006C9A7E /* Foundation.framework */; };
+		FF63D472158BAF86006C9A7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF63D470158BAF86006C9A7E /* InfoPlist.strings */; };
+		FF63D475158BAF86006C9A7E /* IRWebRendererSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF63D474158BAF86006C9A7E /* IRWebRendererSampleTests.m */; };
+		FF63D47E158BB015006C9A7E /* libIRWebRenderer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF63D3FF158B9E65006C9A7E /* libIRWebRenderer.a */; };
+		FF63D480158BB493006C9A7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF63D438158BAF5D006C9A7E /* CoreGraphics.framework */; };
+		FF63D482158BB6AF006C9A7E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF63D481158BB6AF006C9A7E /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF63D46B158BAF86006C9A7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF63D3F6158B9E65006C9A7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF63D44E158BAF86006C9A7E;
+			remoteInfo = IRWebRendererSample;
+		};
+		FF63D47C158BB00F006C9A7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF63D3F6158B9E65006C9A7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF63D3FE158B9E65006C9A7E;
+			remoteInfo = IRWebRenderer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF63D3FF158B9E65006C9A7E /* libIRWebRenderer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIRWebRenderer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF63D402158B9E65006C9A7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FF63D406158B9E65006C9A7E /* IRWebRenderer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IRWebRenderer-Prefix.pch"; sourceTree = "<group>"; };
+		FF63D407158B9E65006C9A7E /* IRWebRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRWebRenderer.h; sourceTree = "<group>"; };
+		FF63D408158B9E65006C9A7E /* IRWebRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRWebRenderer.m; sourceTree = "<group>"; };
+		FF63D40F158B9F13006C9A7E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF63D415158BA133006C9A7E /* IRWebRenditionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRWebRenditionOperation.h; sourceTree = "<group>"; };
+		FF63D416158BA133006C9A7E /* IRWebRenditionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRWebRenditionOperation.m; sourceTree = "<group>"; };
+		FF63D41F158BAF2C006C9A7E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FF63D438158BAF5D006C9A7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FF63D44F158BAF86006C9A7E /* IRWebRendererSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IRWebRendererSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF63D456158BAF86006C9A7E /* IRWebRendererSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IRWebRendererSample-Info.plist"; sourceTree = "<group>"; };
+		FF63D458158BAF86006C9A7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF63D45A158BAF86006C9A7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF63D45C158BAF86006C9A7E /* IRWebRendererSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IRWebRendererSample-Prefix.pch"; sourceTree = "<group>"; };
+		FF63D45D158BAF86006C9A7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF63D45E158BAF86006C9A7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF63D467158BAF86006C9A7E /* IRWebRendererSampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IRWebRendererSampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF63D46F158BAF86006C9A7E /* IRWebRendererSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IRWebRendererSampleTests-Info.plist"; sourceTree = "<group>"; };
+		FF63D471158BAF86006C9A7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF63D473158BAF86006C9A7E /* IRWebRendererSampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRWebRendererSampleTests.h; sourceTree = "<group>"; };
+		FF63D474158BAF86006C9A7E /* IRWebRendererSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRWebRendererSampleTests.m; sourceTree = "<group>"; };
+		FF63D47F158BB0CE006C9A7E /* IRWebRendererDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRWebRendererDefines.h; sourceTree = "<group>"; };
+		FF63D481158BB6AF006C9A7E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF63D3FC158B9E65006C9A7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF63D403158B9E65006C9A7E /* Foundation.framework in Frameworks */,
+				FF63D410158B9F13006C9A7E /* UIKit.framework in Frameworks */,
+				FF63D482158BB6AF006C9A7E /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF63D44C158BAF86006C9A7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF63D451158BAF86006C9A7E /* UIKit.framework in Frameworks */,
+				FF63D452158BAF86006C9A7E /* Foundation.framework in Frameworks */,
+				FF63D453158BAF86006C9A7E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF63D463158BAF86006C9A7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF63D47E158BB015006C9A7E /* libIRWebRenderer.a in Frameworks */,
+				FF63D468158BAF86006C9A7E /* SenTestingKit.framework in Frameworks */,
+				FF63D469158BAF86006C9A7E /* UIKit.framework in Frameworks */,
+				FF63D46A158BAF86006C9A7E /* Foundation.framework in Frameworks */,
+				FF63D480158BB493006C9A7E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF63D3F4158B9E65006C9A7E = {
+			isa = PBXGroup;
+			children = (
+				FF63D404158B9E65006C9A7E /* IRWebRenderer */,
+				FF63D454158BAF86006C9A7E /* IRWebRendererSample */,
+				FF63D46D158BAF86006C9A7E /* IRWebRendererSampleTests */,
+				FF63D401158B9E65006C9A7E /* Frameworks */,
+				FF63D400158B9E65006C9A7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF63D400158B9E65006C9A7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF63D3FF158B9E65006C9A7E /* libIRWebRenderer.a */,
+				FF63D44F158BAF86006C9A7E /* IRWebRendererSample.app */,
+				FF63D467158BAF86006C9A7E /* IRWebRendererSampleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF63D401158B9E65006C9A7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF63D402158B9E65006C9A7E /* Foundation.framework */,
+				FF63D40F158B9F13006C9A7E /* UIKit.framework */,
+				FF63D41F158BAF2C006C9A7E /* SenTestingKit.framework */,
+				FF63D438158BAF5D006C9A7E /* CoreGraphics.framework */,
+				FF63D481158BB6AF006C9A7E /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF63D404158B9E65006C9A7E /* IRWebRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				FF63D47F158BB0CE006C9A7E /* IRWebRendererDefines.h */,
+				FF63D407158B9E65006C9A7E /* IRWebRenderer.h */,
+				FF63D408158B9E65006C9A7E /* IRWebRenderer.m */,
+				FF63D415158BA133006C9A7E /* IRWebRenditionOperation.h */,
+				FF63D416158BA133006C9A7E /* IRWebRenditionOperation.m */,
+				FF63D405158B9E65006C9A7E /* Supporting Files */,
+			);
+			path = IRWebRenderer;
+			sourceTree = "<group>";
+		};
+		FF63D405158B9E65006C9A7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF63D406158B9E65006C9A7E /* IRWebRenderer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF63D454158BAF86006C9A7E /* IRWebRendererSample */ = {
+			isa = PBXGroup;
+			children = (
+				FF63D45D158BAF86006C9A7E /* AppDelegate.h */,
+				FF63D45E158BAF86006C9A7E /* AppDelegate.m */,
+				FF63D455158BAF86006C9A7E /* Supporting Files */,
+			);
+			path = IRWebRendererSample;
+			sourceTree = "<group>";
+		};
+		FF63D455158BAF86006C9A7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF63D456158BAF86006C9A7E /* IRWebRendererSample-Info.plist */,
+				FF63D457158BAF86006C9A7E /* InfoPlist.strings */,
+				FF63D45A158BAF86006C9A7E /* main.m */,
+				FF63D45C158BAF86006C9A7E /* IRWebRendererSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF63D46D158BAF86006C9A7E /* IRWebRendererSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF63D473158BAF86006C9A7E /* IRWebRendererSampleTests.h */,
+				FF63D474158BAF86006C9A7E /* IRWebRendererSampleTests.m */,
+				FF63D46E158BAF86006C9A7E /* Supporting Files */,
+			);
+			path = IRWebRendererSampleTests;
+			sourceTree = "<group>";
+		};
+		FF63D46E158BAF86006C9A7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF63D46F158BAF86006C9A7E /* IRWebRendererSampleTests-Info.plist */,
+				FF63D470158BAF86006C9A7E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FF63D3FD158B9E65006C9A7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF63D417158BA133006C9A7E /* IRWebRenditionOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FF63D3FE158B9E65006C9A7E /* IRWebRenderer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF63D40C158B9E65006C9A7E /* Build configuration list for PBXNativeTarget "IRWebRenderer" */;
+			buildPhases = (
+				FF63D3FB158B9E65006C9A7E /* Sources */,
+				FF63D3FC158B9E65006C9A7E /* Frameworks */,
+				FF63D3FD158B9E65006C9A7E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IRWebRenderer;
+			productName = IRWebRenderer;
+			productReference = FF63D3FF158B9E65006C9A7E /* libIRWebRenderer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FF63D44E158BAF86006C9A7E /* IRWebRendererSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF63D476158BAF86006C9A7E /* Build configuration list for PBXNativeTarget "IRWebRendererSample" */;
+			buildPhases = (
+				FF63D44B158BAF86006C9A7E /* Sources */,
+				FF63D44C158BAF86006C9A7E /* Frameworks */,
+				FF63D44D158BAF86006C9A7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IRWebRendererSample;
+			productName = IRWebRendererSample;
+			productReference = FF63D44F158BAF86006C9A7E /* IRWebRendererSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF63D466158BAF86006C9A7E /* IRWebRendererSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF63D479158BAF86006C9A7E /* Build configuration list for PBXNativeTarget "IRWebRendererSampleTests" */;
+			buildPhases = (
+				FF63D462158BAF86006C9A7E /* Sources */,
+				FF63D463158BAF86006C9A7E /* Frameworks */,
+				FF63D464158BAF86006C9A7E /* Resources */,
+				FF63D465158BAF86006C9A7E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF63D47D158BB00F006C9A7E /* PBXTargetDependency */,
+				FF63D46C158BAF86006C9A7E /* PBXTargetDependency */,
+			);
+			name = IRWebRendererSampleTests;
+			productName = IRWebRendererSampleTests;
+			productReference = FF63D467158BAF86006C9A7E /* IRWebRendererSampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF63D3F6158B9E65006C9A7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Iridia Productions";
+			};
+			buildConfigurationList = FF63D3F9158B9E65006C9A7E /* Build configuration list for PBXProject "IRWebRenderer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FF63D3F4158B9E65006C9A7E;
+			productRefGroup = FF63D400158B9E65006C9A7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF63D3FE158B9E65006C9A7E /* IRWebRenderer */,
+				FF63D44E158BAF86006C9A7E /* IRWebRendererSample */,
+				FF63D466158BAF86006C9A7E /* IRWebRendererSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF63D44D158BAF86006C9A7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF63D459158BAF86006C9A7E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF63D464158BAF86006C9A7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF63D472158BAF86006C9A7E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FF63D465158BAF86006C9A7E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF63D3FB158B9E65006C9A7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF63D409158B9E65006C9A7E /* IRWebRenderer.m in Sources */,
+				FF63D418158BA133006C9A7E /* IRWebRenditionOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF63D44B158BAF86006C9A7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF63D45B158BAF86006C9A7E /* main.m in Sources */,
+				FF63D45F158BAF86006C9A7E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF63D462158BAF86006C9A7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF63D475158BAF86006C9A7E /* IRWebRendererSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF63D46C158BAF86006C9A7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF63D44E158BAF86006C9A7E /* IRWebRendererSample */;
+			targetProxy = FF63D46B158BAF86006C9A7E /* PBXContainerItemProxy */;
+		};
+		FF63D47D158BB00F006C9A7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF63D3FE158B9E65006C9A7E /* IRWebRenderer */;
+			targetProxy = FF63D47C158BB00F006C9A7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF63D457158BAF86006C9A7E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF63D458158BAF86006C9A7E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FF63D470158BAF86006C9A7E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF63D471158BAF86006C9A7E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF63D40A158B9E65006C9A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF63D40B158B9E65006C9A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF63D40D158B9E65006C9A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/IRWebRenderer.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IRWebRenderer/IRWebRenderer-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FF63D40E158B9E65006C9A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/IRWebRenderer.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IRWebRenderer/IRWebRenderer-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FF63D477158BAF86006C9A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IRWebRendererSample/IRWebRendererSample-Prefix.pch";
+				INFOPLIST_FILE = "IRWebRendererSample/IRWebRendererSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FF63D478158BAF86006C9A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IRWebRendererSample/IRWebRendererSample-Prefix.pch";
+				INFOPLIST_FILE = "IRWebRendererSample/IRWebRendererSample-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FF63D47A158BAF86006C9A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IRWebRendererSample.app/IRWebRendererSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IRWebRendererSample/IRWebRendererSample-Prefix.pch";
+				INFOPLIST_FILE = "IRWebRendererSampleTests/IRWebRendererSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FF63D47B158BAF86006C9A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IRWebRendererSample.app/IRWebRendererSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IRWebRendererSample/IRWebRendererSample-Prefix.pch";
+				INFOPLIST_FILE = "IRWebRendererSampleTests/IRWebRendererSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF63D3F9158B9E65006C9A7E /* Build configuration list for PBXProject "IRWebRenderer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF63D40A158B9E65006C9A7E /* Debug */,
+				FF63D40B158B9E65006C9A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF63D40C158B9E65006C9A7E /* Build configuration list for PBXNativeTarget "IRWebRenderer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF63D40D158B9E65006C9A7E /* Debug */,
+				FF63D40E158B9E65006C9A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF63D476158BAF86006C9A7E /* Build configuration list for PBXNativeTarget "IRWebRendererSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF63D477158BAF86006C9A7E /* Debug */,
+				FF63D478158BAF86006C9A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF63D479158BAF86006C9A7E /* Build configuration list for PBXNativeTarget "IRWebRendererSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF63D47A158BAF86006C9A7E /* Debug */,
+				FF63D47B158BAF86006C9A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF63D3F6158B9E65006C9A7E /* Project object */;
+}

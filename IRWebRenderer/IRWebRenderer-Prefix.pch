@@ -1,0 +1,20 @@
+//
+//  IRWebRenderer-Prefix.pch
+//  IRWebRenderer
+//
+//  Created by Evadne Wu on 6/15/12.
+//  Copyright (c) 2012 Iridia Productions. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+	#import <TargetConditionals.h>
+	#import <Foundation/Foundation.h>
+
+	#if TARGET_OS_IPHONE
+		#import <UIKit/UIKit.h>
+	#else
+		#import <WebKit/WebKit.h>	//	TBD — no support actually
+	#endif
+	
+#endif
